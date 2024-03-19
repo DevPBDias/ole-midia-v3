@@ -26,7 +26,7 @@ export const HeaderBar = styled.header`
 `;
 
 export const OleLogo = styled.img`
-    position: fixed;
+    position: absolute;
     top: 1.2rem;
     left: 1.5rem;
     z-index: 98;
@@ -37,7 +37,7 @@ export const OleLogo = styled.img`
 export const StyledBurger = styled.div<Props>`
     width: 1.5rem;
     height: 1.5rem;
-    position: fixed;
+    position: absolute;
     top: 1.2rem;
     right: 1.5rem;
     z-index: 98;

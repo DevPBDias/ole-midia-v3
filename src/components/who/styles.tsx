@@ -26,7 +26,7 @@ export const TxtContainer = styled.div`
     padding-block: 2.7em;
 
     div {
-        width: 72%;
+        width: 70%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
