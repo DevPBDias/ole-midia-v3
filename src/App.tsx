@@ -1,4 +1,5 @@
 import Clients from './components/clients'
+import Contact from './components/contact'
 import Footer from './components/footer'
 import Header from './components/header'
 import Home from './components/home'
@@ -13,6 +14,7 @@ function App() {
         <Who />
         <Services />
         <Clients />
+        <Contact />
         <Footer />
       </>
   )
