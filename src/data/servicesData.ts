@@ -3,9 +3,9 @@ import image2 from '../assets/images/design.webp'
 import image3 from '../assets/images/fotografia.webp'
 import image4 from '../assets/images/edição.webp'
 import image5 from '../assets/images/gestão.webp'
-import image6 from '../assets/images/publicidade.webp'
+import image6 from '../assets/images/publico.webp'
 
-type IServiceProps = {
+export type IServiceProps = {
     id: number,
     name: string,
     description: string,
@@ -47,7 +47,7 @@ const servicesData: IServiceProps[] = [
         id: 6,
         name: 'RP E PUBLICIDADE',
         description: 'Proximidade e relação individual com empresas e marcas, que possam gerar experiências únicas e/ou patrocínios.',
-        image: image1,
+        image: image6,
     }
 ]
 

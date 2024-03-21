@@ -1,3 +1,5 @@
+import Clients from './components/clients'
+import Footer from './components/footer'
 import Header from './components/header'
 import Home from './components/home'
 import Services from './components/services'
@@ -10,6 +12,8 @@ function App() {
         <Home />
         <Who />
         <Services />
+        <Clients />
+        <Footer />
       </>
   )
 }
