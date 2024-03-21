@@ -1,8 +1,13 @@
-import React from 'react'
+import LinksFooter from "./LinksFooter"
+import MidiaFooter from "./MidiaFooter"
+import { FooterContainer } from "./styles"
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <FooterContainer>
+      <MidiaFooter />
+      <LinksFooter />
+    </FooterContainer>
   )
 }
 
