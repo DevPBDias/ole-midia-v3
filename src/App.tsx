@@ -3,6 +3,7 @@ import Contact from './components/contact'
 import Footer from './components/footer'
 import Header from './components/header'
 import Home from './components/home'
+import Portfolio from './components/portfolio'
 import Services from './components/services'
 import Who from './components/who'
 
@@ -14,6 +15,7 @@ function App() {
         <Who />
         <Services />
         <Clients />
+        <Portfolio />
         <Contact />
         <Footer />
       </>
