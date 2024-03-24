@@ -11,7 +11,7 @@ Veja o site da [Olé Mídia](https://www.olemidia.com.br) em tempo real.
   <li>Framework: React Hooks</li>
   <li>Linguagem: Javascript, Typescript</li>
   <li>Estilização: Styled-components, Framer-motion</li>
-  <li>Formulário: React-hook-form, Zod, Emailjs.s</li>
+  <li>Formulário: React-hook-form, Zod, Emailjs</li>
 </ul>
 </details>
 
