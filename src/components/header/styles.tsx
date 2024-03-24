@@ -87,7 +87,7 @@ export const NavBar = styled.ul<Props>`
         z-index: 10;
         background-color: #FF6123;
         position: fixed;
-        transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
+        transform: ${({ open }) => (open ? 'translateY(0)' : 'translateY(-100%)')};
         top: 0;
         right: 0;
         height: 26.1em;

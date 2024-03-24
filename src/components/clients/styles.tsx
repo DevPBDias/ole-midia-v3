@@ -85,9 +85,7 @@ export const TextContent = styled.div`
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
     align-items: center;
-    justify-items: center;
 
     h3 {
         color: var(--Vibrant-Orange, #FF6123);
@@ -103,6 +101,5 @@ export const TextContent = styled.div`
         font-size: 0.44444rem;
         font-style: normal;
         font-weight: 400;
-        line-height: 0.88889rem; 
     }
 `;

@@ -39,7 +39,6 @@ export const BtnContainer = styled.section`
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
-    margin-left: 2.5em;
 
     .carousel {
         cursor: grab;
@@ -52,6 +51,7 @@ export const BtnContainer = styled.section`
     
     .item {
         display: flex;
+        padding-left: 2em;
         gap: 0.4em;
 
         button {
@@ -67,6 +67,11 @@ export const BtnContainer = styled.section`
             font-weight: 600;
             line-height: 1.04056rem;
             text-transform: uppercase;
+            background: var(--Off-White, #EBE3DE);
+
+            &:focus {
+                background: var(--Vibrant-Orange, #FF6123);
+            }
         }
     }
 `;
@@ -77,7 +82,6 @@ export const ImgCarouselContainer = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 1.5em;
 
     .carousel {
         cursor: grab;
@@ -86,12 +90,14 @@ export const ImgCarouselContainer = styled.section`
 
     .inner {
         display: flex;
+        gap: .6em;
+        margin-top: 2em;
+        padding-left: 2em;
     }
     
     .item {
-        min-width: 10.98rem;
-        min-height: 19.56rem;
-        padding: .61rem;
+        min-width: 10.98em;
+        min-height: 19.56em;
 
         img {
             width: 100%;
