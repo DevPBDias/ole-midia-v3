@@ -22,7 +22,6 @@ export const ImgContainer = styled.div`
 
 export const TxtContainer = styled.div`
     width: 100%;
-    height: calc(32em - 14.67em);
     padding-block: 2.7em;
 
     div {
