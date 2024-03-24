@@ -1,5 +1,7 @@
 # Olé Mídia website V3
 
+**- Projeto Freelancer**
+
 Site da Olé Mídia em que conta a história da empresa, disponibiliza links para suas redes sociais, enumera os seus serviços e clientes atuais, mostra seu portfólio e possui um campo de texto para entrar em contato com a empresa.
 
 Veja o site da [Olé Mídia](https://www.olemidia.com.br) em tempo real.
