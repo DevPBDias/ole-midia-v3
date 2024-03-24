@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# Olé Mídia website V3
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**- Projeto Freelancer**
 
-Currently, two official plugins are available:
+Site da Olé Mídia em que conta a história da empresa, disponibiliza links para suas redes sociais, enumera os seus serviços e clientes atuais, mostra seu portfólio e possui um campo de texto para entrar em contato com a empresa.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Veja o site da [Olé Mídia](https://www.olemidia.com.br) em tempo real.
 
-## Expanding the ESLint configuration
+<details><summary>Stack utilizada</summary>
+<ul>
+  <li>Framework: React Hooks</li>
+  <li>Linguagem: Javascript, Typescript</li>
+  <li>Estilização: Styled-components, Framer-motion</li>
+  <li>Formulário: React-hook-form, Zod, Emailjs</li>
+</ul>
+</details>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<details><summary>Funcionalidades</summary>
+<ul>
+   <li>Menu hamburguer vindo de cima para versão mobile e tablet;</li>
+    <li>Envio de mensagem diretamente para email da empresa;</li>
+    <li>Mensagens de erros nos campos de texto da seção de Contatos;</li>
+    <li>Filtro de imagens atráves dos botões na seção de Portfólio;</li>
+    <li>Carousel de imagens e botões na seção de Portfólio;</li>
+    <li>Link para contato via whatsapp fixo na tela;</li>
+    <li>Abertura de nova aba de navegador para links de redes sociais;</li>
+</ul>
+</details>
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<details><summary>Aprendizados</summary>
+ <ul>
+  <li>Desenvolver um produto nas diretrizes que o cliente quer e no prazo determinado.</li>
+  <li>Figma mockup</li>
+  <li>Responsividade</li>
+  <li>Framer-motion</li>
+  <li>Aprofundar conhecimento no uso do React-hook-form</li>
+</ul>
+</details>
