@@ -46,6 +46,7 @@ export const TxtContainer = styled.div`
     display: flex;
     justify-items: center;
     align-items: center;
+    padding-block: 2.7em;
 
     div {
         padding-inline: 10%;

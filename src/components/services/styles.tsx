@@ -8,7 +8,7 @@ export const ServicesContainer = styled.section`
     align-items: center;
     justify-items: center;
     background-color: var(--Dark-Brown, #250900);
-    padding-top: 2.2em;
+    padding: 2.2em 1.33em;
 
     h5 {
         color: var(--Vibrant-Orange, #FF6123);
@@ -25,9 +25,31 @@ export const ServicesContainer = styled.section`
         justify-content: center;
         align-items: center;
         justify-items: center;
-        padding-block: 2.2em;
-        padding-inline: 6.5%;
+        margin-top: 2.4em;
         gap: 1em;
+    }
+
+    @media (min-width: 600px) {
+        padding: 3.56em 1.78em;
+
+        h5 {
+            font-size: 2.66667rem;
+            line-height: 3.11111rem;
+        }
+    }
+    
+    @media (min-width: 1000px) {
+        padding: 4.44em 4em;
+
+        h5 {
+            font-size: 3.55556rem;
+            line-height: 4rem;
+        }
+
+        section {
+            flex-flow: row wrap;
+            margin-top: 4.6em;
+        }
     }
 `;
 
@@ -41,9 +63,14 @@ export const CardContainer = styled.div`
     justify-items: center;
     border-radius: 0.88889em;
     background-color: var(--Off-White, #EBE3DE);
+
+    @media (min-width: 1000px) {
+        width: 35.33333rem;
+        height: 17.77778rem;
+    }
 `;
 
-export const ImgContainer = styled.div`
+export const ImgContainer = styled.picture`
     width: 50%;
     height: 100%;
     display: flex;
@@ -66,7 +93,11 @@ export const TextContainer = styled.div`
     justify-content: center;
     align-items: center;
     justify-items: center;
-    padding: .5em 1em;
+    padding: .89em;
+
+    @media (min-width: 600px) {
+        padding: .89em 2.2em;
+    }
 `;
 
 export const TextContent = styled.div`
@@ -93,5 +124,31 @@ export const TextContent = styled.div`
         font-style: normal;
         font-weight: 400;
         line-height: 0.88889rem;
+    }
+
+    @media (min-width: 600px) {
+        h3 {
+            font-size: 1.33333rem;
+            font-weight: 800;
+            line-height: 2rem;
+        }
+
+        p {
+            font-size: 0.66667rem;
+            line-height: 1.33333rem;
+        }
+    }
+    
+    @media (min-width: 1000px) {
+        h3 {
+            font-size: 1.33333rem;
+            font-weight: 800;
+            line-height: 2rem;
+        }
+
+        p {
+            font-size: 0.88889rem;
+            line-height: 1.33333rem;
+        }
     }
 `;

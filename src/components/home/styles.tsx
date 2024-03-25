@@ -39,10 +39,10 @@ export const HomeContainer = styled.section`
     }
 
     .arrow_icon {
-        position: fixed;
+        position: absolute;
         z-index: 3;
         right: 47vw;
-        top: 52vh;
+        top: 53vh;
         width: 1.77778rem;
         height: 1.77778rem;
         flex-shrink: 0;
@@ -77,7 +77,7 @@ export const HomeContainer = styled.section`
     }
 
     @media (min-width: 1000px) {
-        height: 92vh;
+        height: 44.4rem;
 
         .container_img {
         position: absolute;
@@ -92,7 +92,11 @@ export const HomeContainer = styled.section`
         }
     }
 
-        .wpp_icon, .arrow_icon {
+        .arrow_icon {
+            top: 80vh;
+        }
+
+        .wpp_icon {
             top: 90vh;
         }
 

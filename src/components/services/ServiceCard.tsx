@@ -5,6 +5,7 @@ function ServiceCard({ data }: any) {
     return (
         <CardContainer>
             <ImgContainer>
+                <source srcSet={data.image_dk} media="(min-width: 600px)"/>
                 <img src={data.image} alt={data.name} />
             </ImgContainer>
             <TextContainer>
