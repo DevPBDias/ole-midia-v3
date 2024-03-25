@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const WhoContainer = styled.section`
     width: 100%;
-    height: 32em;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -12,7 +11,6 @@ export const WhoContainer = styled.section`
 
 export const ImgContainer = styled.div`
     width: 100%;
-    height: 14.67em;
 
     img {
         width: 100%;
@@ -22,10 +20,10 @@ export const ImgContainer = styled.div`
 
 export const TxtContainer = styled.div`
     width: 100%;
-    padding-block: 2.7em;
+    padding-block: 3em;
 
     div {
-        width: 70%;
+        padding-inline: 10%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;

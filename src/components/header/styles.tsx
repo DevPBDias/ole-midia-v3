@@ -8,50 +8,89 @@ export const HeaderBar = styled.header`
     width: 100%;
     display: flex;
     height: 4.44em;
-    padding: 1.33em;
-    justify-content: space-around;
+    padding: 1.3em;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
     background: #FF6123;
 
     section {
         display: flex;
-        width: 90%;
+        width: 100%;
         height: 1.78em;
+        justify-items: center;
         justify-content: space-between;
         align-items: center;
-        flex-shrink: 0;
+        position: relative;
+
+        .div_links_desktop {
+            display: none;
+        }
+
+        .div_icons_desktop {
+            display: none;
+        }
+
+    }
+
+    @media (min-width: 600px) {
+        padding: 1.1em 1.8em;
+
+        section {
+            height: 2.67em;
+        }
+    }
+
+    @media (min-width: 1000px) {
+        padding: 1.3em 4em;
+
+        section {
+            .div_links_desktop {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1.5em;
+            }
+
+            .div_icons_desktop {
+                display: flex;
+            }
+        }
     }
 `;
 
 export const OleLogo = styled.img`
     position: absolute;
-    top: 1.2rem;
-    left: 1.5rem;
+    top: 0;
+    left: 0;
     z-index: 98;
     width: 2.55em;
     height: 1.78em;
+
+    @media (min-width: 600px) {
+        width: 3.17em;
+        height: 2.2em;
+    }
+
+    @media (min-width: 1000px) {
+        position: unset;
+    }
 `;
 
 export const StyledBurger = styled.div<Props>`
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.5em;
+    height: 1.5em;
     position: absolute;
-    top: 1.2rem;
-    right: 1.5rem;
+    top: 10;
+    right: 0;
     z-index: 98;
-    display: none;
-    
-    @media (min-width: 360px) {
-        display: flex;
-        justify-content: space-around;
-        flex-flow: column nowrap;
-    }
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column nowrap;
+        
     .burger {
-        width: 1.5rem;
-        height: 0.25rem;
+        width: 1.5em;
+        height: 0.25em;
         background-color: #250900;
         border-radius: 10px;
         transform-origin: 1px;
@@ -70,19 +109,36 @@ export const StyledBurger = styled.div<Props>`
             transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
         }
     }
+
+    @media (min-width: 600px) {
+        width: 2.66667em;
+        height: 2em;
+
+        .burger {
+            width: 2em;
+            height: 0.30em;
+        }
+    }
+
+    @media (min-width: 1000px) {
+        display: none;
+    }
   `;
 
 export const NavBar = styled.ul<Props>`
-    display: flex;
-    flex-flow: row nowrap;
-    padding-top: 4em;
+        display: none;
 
-    @media (max-width: 744px) {
+        .div_links_mobile, .div_icons_mobile {
+            display: none;
+        }
+
+    @media (min-width: 300px) and (max-width: 999px) {
         display: flex;
         flex-direction: column;
         justify-content: center;
         justify-items: center;
         align-items: center;
+        padding-top: 4em;
         gap: 1.5em;
         z-index: 10;
         background-color: #FF6123;
@@ -93,12 +149,22 @@ export const NavBar = styled.ul<Props>`
         height: 26.1em;
         width: 100%;
         transition: transform 0.3s ease-in-out;
+
+        .div_links_mobile {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            gap: 1.5em;
+        }
+
+        .div_icons_mobile {
+            display: flex;
+        }
     }
 `;
 
 export const Link = styled.a`
     color: var(--Off-White, #EBE3DE);
-    font-family: 'Poppins';
     font-size: 0.88889rem;
     font-style: normal;
     font-weight: 700;
@@ -115,7 +181,7 @@ export const ContainerIcons = styled.section`
     flex: row;
     justify-items: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.5em;
 `;
 
 export const Icons = styled.img`
