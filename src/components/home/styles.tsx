@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const HomeContainer = styled.section`
     width: 100%;
     height: 28.89em;
-    flex-shrink: 0;
     position: relative;
 
     .container_img {
@@ -11,6 +10,7 @@ export const HomeContainer = styled.section`
         z-index: 1;
         width: 100%;
         height: 100%;
+        object-fit: cover;
 
         img {
             width: 100%;
@@ -38,27 +38,21 @@ export const HomeContainer = styled.section`
         }
     }
 
-    .container_icons {
-        width: 100%;
-        height: 100%;
-        position: absolute;
+    .arrow_icon {
+        position: fixed;
         z-index: 3;
-        bottom: 8%;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-
-        img {
-            width: 1.77778rem;
-            height: 1.77778rem;
-        }
+        right: 47vw;
+        top: 52vh;
+        width: 1.77778rem;
+        height: 1.77778rem;
+        flex-shrink: 0;
     }
 
     .wpp_icon {
         position: fixed;
         z-index: 3;
         right: 10vw;
-        top: 60vh;
+        top: 52vh;
         width: 2.66667rem;
         height: 2.66667rem;
         flex-shrink: 0;
@@ -75,20 +69,32 @@ export const HomeContainer = styled.section`
             }
         }
 
-        .container_icons {
-            img {
-                width: 2.66667rem;
-                height: 2.66667rem;
-            }
-        }
-
-        .wpp_icon {
-            top: 85vh;
+        .wpp_icon, .arrow_icon {
+            width: 2.66667rem;
+            height: 2.66667rem;
+            top: 75vh;
         }
     }
 
     @media (min-width: 1000px) {
-        height: 41.33em;
+        height: 92vh;
+
+        .container_img {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+        .wpp_icon, .arrow_icon {
+            top: 90vh;
+        }
 
         .container_txt {
             p {

@@ -7,7 +7,7 @@ import arrow from '../../assets/icons/arrow.webp'
 
 function Home() {
   return (
-    <HomeContainer>
+    <HomeContainer id='home'>
       <picture className='container_img'>
         <source srcSet={homeImgDk} media='(min-width: 1000px)' />
         <source srcSet={homeImgTb} media='(min-width: 600px)' />
@@ -16,9 +16,7 @@ function Home() {
       <section className='container_txt'>
         <p>Sua imagem, nosso plano de jogo!</p>
       </section>
-      <div className='container_icons'>
-        <img src={arrow} alt="" />
-      </div>
+      <img className='arrow_icon' src={arrow} alt="arrow" />
       <img className='wpp_icon' src={Whatsapp} alt="" />
     </HomeContainer>
   )

@@ -3,7 +3,7 @@ import { ImgContainer, TxtContainer, WhoContainer } from './styles'
 
 function Who() {
     return (
-        <WhoContainer>
+        <WhoContainer id='who'>
             <ImgContainer>
                 <img src={olemidiaMobile} alt="oleMidia" />
             </ImgContainer>

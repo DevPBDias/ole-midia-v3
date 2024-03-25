@@ -4,7 +4,7 @@ import { ClientsContainer } from './styles'
 
 function Clients() {
   return (
-    <ClientsContainer>
+    <ClientsContainer id='clients'>
       <h5>Clientes</h5>
       <section>
         {

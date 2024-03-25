@@ -3,7 +3,7 @@ import { ContactContainer } from "./styles"
 
 function Contact() {
   return (
-    <ContactContainer>
+    <ContactContainer id='contact'>
         <h3>Contato</h3>
         <Form />
     </ContactContainer>

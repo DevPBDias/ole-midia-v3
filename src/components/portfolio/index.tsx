@@ -4,7 +4,7 @@ import { PortfolioContainer } from "./styles"
 
 function Portfolio() {
     return (
-        <PortfolioContainer>
+        <PortfolioContainer id='portfolio'>
             <h3>Portfólio</h3>
             <BtnCarousel />
             <ImgCarousel />

@@ -1,21 +1,34 @@
-import IconsNavbar from './IconsNavbar'
-import { Link } from './styles'
+import styled from 'styled-components';
+
+const NavBar = styled.ul`
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1.2rem;
+`;
+
+const Link = styled.a`
+    color: var(--Off-White, #EBE3DE);
+    font-size: 0.88889rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.88889rem;
+    text-transform: uppercase;
+
+    &:hover {
+    color: var(#250900);
+}
+`;
 
 function ContentNavbar() {
     return (
-        <>
-            <div className="div_links_mobile">
-                <Link href="#home">Home</Link>
-                <Link href="#who">Quem somos</Link>
-                <Link href="#services">Serviços</Link>
-                <Link href="#client">Clientes</Link>
-                <Link href="#portfolio">Portfólio</Link>
-                <Link href="#contact">Contato</Link>
-            </div>
-            <div className="div_icons_mobile">
-                <IconsNavbar />
-            </div>
-        </>
+        <NavBar>
+            <Link href="#home">Home</Link>
+            <Link href="#who">Quem somos</Link>
+            <Link href="#services">Serviços</Link>
+            <Link href="#client">Clientes</Link>
+            <Link href="#portfolio">Portfólio</Link>
+            <Link href="#contact">Contato</Link>
+        </NavBar>
     )
 }
 
