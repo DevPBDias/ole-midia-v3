@@ -63,5 +63,39 @@ export const HomeContainer = styled.section`
         height: 2.66667rem;
         flex-shrink: 0;
     }
+
+    @media (min-width: 600px) {
+        height: 41.33em;
+
+        .container_txt {
+            p {
+                width: 70%;
+                font-size: 3.55rem;
+                line-height: 4rem; 
+            }
+        }
+
+        .container_icons {
+            img {
+                width: 2.66667rem;
+                height: 2.66667rem;
+            }
+        }
+
+        .wpp_icon {
+            top: 85vh;
+        }
+    }
+
+    @media (min-width: 1000px) {
+        height: 41.33em;
+
+        .container_txt {
+            p {
+                font-size: 5.33333rem;
+                line-height: 6.66667rem;
+            }
+        }
+    }
 `;
 
