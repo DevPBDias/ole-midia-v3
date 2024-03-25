@@ -31,6 +31,11 @@ export const ClientsContainer = styled.section`
 
     @media (min-width: 600px) {
         padding: 3.56em 1.78em;
+        
+    section {
+        gap: 1em;
+
+    }
 
         h5 {
             font-size: 2.66667rem;
@@ -39,7 +44,7 @@ export const ClientsContainer = styled.section`
     }
     
     @media (min-width: 1000px) {
-        padding: 5.33em 4em;
+        padding: 5.33em 2em;
 
         h5 {
             font-size: 3.55556rem;
@@ -47,8 +52,17 @@ export const ClientsContainer = styled.section`
         }
 
         section {
+            gap: 1.5em;
             flex-flow: row wrap;
             margin-top: 4.6em;
+        }
+    }
+
+    @media (min-width: 1500px) {
+        padding: 5.33em 4em;
+
+        section {
+            gap: 2.5em;
         }
     }
 `;
