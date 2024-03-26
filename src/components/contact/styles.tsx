@@ -57,6 +57,16 @@ export const FormContainer = styled.form`
         gap: .4em;
     }
 
+    .short_content {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        gap: .4em;
+    }
+
     input {
         width: 100%;
         height: 1.77778rem;
@@ -124,6 +134,11 @@ export const FormContainer = styled.form`
         gap: .9em;
         margin-block: 1.3em 1.8em;
 
+        .short_content {
+            flex-flow: column nowrap;
+            gap: .9em;
+        }
+
         .short_container {
             flex-flow: row nowrap;
             gap: .9em;
@@ -161,8 +176,7 @@ export const FormContainer = styled.form`
         gap: .4em;
         margin-block: 5em 1.3em;
 
-        .short_container {
-            flex-flow: row nowrap;
+        .short_container, .short_content {
             gap: .4em;
         }
 
