@@ -6,7 +6,7 @@ import arte3 from '../../assets/images/arte_giu2.webp'
 import { ImgCarouselContainer } from "./styles"
 
 function ImgCarousel() {
-    const images = [arte1, arte2, arte3]
+    const images = [arte1, arte2, arte3, arte1, arte2, arte3]
     const carousel = useRef<any>(null);
     const [width, setWidth] = useState(0)
 

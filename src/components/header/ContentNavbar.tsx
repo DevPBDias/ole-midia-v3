@@ -8,10 +8,11 @@ const NavBar = styled.ul`
 
 const Link = styled.a`
     color: var(--Off-White, #EBE3DE);
-    font-size: 0.88889rem;
+
+    font-size: 0.77778rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 0.88889rem;
+    line-height: 1.33333rem;
     text-transform: uppercase;
 
     &:hover {
@@ -25,7 +26,7 @@ function ContentNavbar() {
             <Link href="#home">Home</Link>
             <Link href="#who">Quem somos</Link>
             <Link href="#services">Serviços</Link>
-            <Link href="#client">Clientes</Link>
+            <Link href="#clients">Clientes</Link>
             <Link href="#portfolio">Portfólio</Link>
             <Link href="#contact">Contato</Link>
         </NavBar>

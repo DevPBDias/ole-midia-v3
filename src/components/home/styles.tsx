@@ -41,8 +41,8 @@ export const HomeContainer = styled.section`
     .arrow_icon {
         position: absolute;
         z-index: 3;
-        right: 47vw;
-        top: 53vh;
+        right: 47%;
+        top: 85%;
         width: 1.77778rem;
         height: 1.77778rem;
         flex-shrink: 0;
@@ -52,7 +52,7 @@ export const HomeContainer = styled.section`
         position: fixed;
         z-index: 3;
         right: 10vw;
-        top: 52vh;
+        top: 48vh;
         width: 2.66667rem;
         height: 2.66667rem;
         flex-shrink: 0;
@@ -69,35 +69,18 @@ export const HomeContainer = styled.section`
             }
         }
 
-        .wpp_icon, .arrow_icon {
+        .wpp_icon {
             width: 2.66667rem;
             height: 2.66667rem;
-            top: 75vh;
+            top: 70vh;
         }
     }
 
     @media (min-width: 1000px) {
         height: 44.4rem;
 
-        .container_img {
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
-        img {
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-        .arrow_icon {
-            top: 80vh;
-        }
-
         .wpp_icon {
-            top: 90vh;
+            top: 84vh;
         }
 
         .container_txt {
@@ -105,6 +88,12 @@ export const HomeContainer = styled.section`
                 font-size: 5.33333rem;
                 line-height: 6.66667rem;
             }
+        }
+    }
+
+    @media (min-width: 1900px) {
+        .wpp_icon {
+            top: 70vh;
         }
     }
 `;
