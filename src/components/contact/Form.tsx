@@ -3,6 +3,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 import { FormContainer } from './styles';
+import { useState } from 'react';
 
 const contactSchema = z.object({
     name: z.string().min(3, 'Nome curto!'),
@@ -18,6 +19,7 @@ function Form() {
     const { register, handleSubmit, formState: { errors, isSubmitSuccessful }, reset, getValues } = useForm<ContactData>({
         resolver: zodResolver(contactSchema),
     });
+    const [emailValid, setEmailValid] = useState<boolean>(false)
 
     const resetForm = () => {
         if (isSubmitSuccessful) {
@@ -31,24 +33,20 @@ function Form() {
         }
     };
 
-    // useEffect(() => {
-    //     if (isSubmitSuccessful) {
-    //       reset({ something: "" })
-    //     }
-    //   }, [formState, submittedData, reset])
-
     const sendEmail = () => {
         const template = {
             from_name: getValues("name"),
             email: getValues('email'),
             subject: getValues('subject'),
-            message: getValues('txt_message') + getValues('phoneNumber'),
+            phoneNumber: getValues('phoneNumber'),
+            message: getValues('txt_message'),
         };
 
         emailjs.send('service_c0dyi0t', 'template_pxeokfc', template, 'K9YPasuHtbdSlNyI_')
             .then((response) => {
                 console.log('Email enviado', response.status, response.text);
                 resetForm();
+                setEmailValid(true)
             }, (error) => {
                 console.log('Error: ', error);
             });
@@ -56,6 +54,7 @@ function Form() {
 
     const onSubmit = async (data: ContactData) => {
         console.log(data);
+        setEmailValid(true)
         sendEmail();
     }
 
@@ -77,6 +76,7 @@ function Form() {
             {errors.subject && <span>{errors.subject.message}</span>}
             <textarea {...register('txt_message')} />
             {errors.txt_message && <span>{errors.txt_message.message}</span>}
+            {emailValid && <span className='email_correct'>Email enviado com sucesso!</span>}
             <button type='submit'>Enviar mensagem</button>
         </ FormContainer>
     )

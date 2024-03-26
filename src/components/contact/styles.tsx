@@ -67,6 +67,15 @@ export const FormContainer = styled.form`
         gap: .4em;
     }
 
+    .email_correct {
+        width: 100%;
+        color: var(--Dark-Brown, #FF6123);
+        font-size: 0.55556rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0.66667rem;
+    }
+
     input {
         width: 100%;
         height: 1.77778rem;
@@ -165,7 +174,7 @@ export const FormContainer = styled.form`
             height: 2.22em;
         }
 
-        span {
+        span, .email_correct {
             font-size: 0.67rem;
             line-height: 0.67rem;
         }

@@ -26,8 +26,8 @@ function ImgCarousel() {
                     transition={{ duration: 0.8 }}
                 >
                     {
-                        images.map((art) => (
-                            <motion.div key={art} className="item">
+                        images.map((art, index: number) => (
+                            <motion.div key={index} className="item">
                                 <img src={art} alt="" />
                             </motion.div>
                         ))
