@@ -63,10 +63,12 @@ function Form() {
         <FormContainer onSubmit={handleSubmit(onSubmit)}>
             <input placeholder="Nome" type="text" {...register('name')} />
             {errors.name && <span>{errors.name.message}</span>}
-            <input placeholder="E-mail" type="email" {...register('email')} />
-            {errors.email && <span>{errors.email.message}</span>}
-            <input placeholder="Telefone" type="text" {...register('phoneNumber')} />
-            {errors.phoneNumber && <span>{errors.phoneNumber.message}</span>}
+            <div className='short_container'>
+                <input placeholder="E-mail" type="email" {...register('email')} />
+                {errors.email && <span>{errors.email.message}</span>}
+                <input placeholder="Telefone" type="text" {...register('phoneNumber')} />
+                {errors.phoneNumber && <span>{errors.phoneNumber.message}</span>}
+            </div>
             <input placeholder="Assunto" type="text" {...register('subject')} />
             {errors.subject && <span>{errors.subject.message}</span>}
             <textarea {...register('txt_message')} />
