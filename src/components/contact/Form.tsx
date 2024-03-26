@@ -7,8 +7,8 @@ import { useState } from 'react';
 
 const contactSchema = z.object({
     name: z.string().min(3, 'Nome curto!'),
-    email: z.string().regex(/\S+@\S+\.\S+/, 'Email inválido!'),
-    phoneNumber: z.string().min(11, 'Número inválido!').max(14, 'Número inválido!'),
+    email: z.string().regex(/\S+@\S+\.\S+/, 'Email inválido! user@email.com'),
+    phoneNumber: z.string().min(14, 'Número inválido! (XX) 9XXXX-XXXX').max(15, 'Número inválido! (XX) 9XXXX-XXXX'),
     subject: z.string().min(3, 'Assunto curto!'),
     txt_message: z.string().min(3, 'Mensagem curta!'),
 });
