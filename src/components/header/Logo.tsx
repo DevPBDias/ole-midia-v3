@@ -1,4 +1,4 @@
-import logo from '../../assets/logo/Logo_mobile.webp'
+import logo from '../../assets/logo/Logo_mobile.png'
 import logoDk from '../../assets/logo/Default_Logo.png'
 import styled from 'styled-components';
 

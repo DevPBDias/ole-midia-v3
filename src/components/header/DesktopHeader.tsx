@@ -1,6 +1,6 @@
 import ContentNavbar from './ContentNavbar'
-import instagramIcon from '../../assets/icons/Instagram.webp';
-import twitterIcon from '../../assets/icons/Twitter.webp';
+import instagramIcon from '../../assets/icons/Instagram.png';
+import twitterIcon from '../../assets/icons/Twitter.png';
 import Logo from './Logo'
 import styled from 'styled-components';
 

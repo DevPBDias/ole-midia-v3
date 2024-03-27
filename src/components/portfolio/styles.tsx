@@ -125,6 +125,7 @@ export const BtnContainer = styled.section`
 
         .item {
             gap: 1.33em;
+            margin-inline: 1.5em;
         }
     }
 

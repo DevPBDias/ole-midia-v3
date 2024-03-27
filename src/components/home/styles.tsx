@@ -52,7 +52,7 @@ export const HomeContainer = styled.section`
         position: fixed;
         z-index: 3;
         right: 10vw;
-        top: 48vh;
+        top: 90vh;
         width: 2.66667rem;
         height: 2.66667rem;
         flex-shrink: 0;
@@ -72,28 +72,17 @@ export const HomeContainer = styled.section`
         .wpp_icon {
             width: 2.66667rem;
             height: 2.66667rem;
-            top: 70vh;
         }
     }
 
     @media (min-width: 1000px) {
         height: 44.4rem;
 
-        .wpp_icon {
-            top: 84vh;
-        }
-
         .container_txt {
             p {
                 font-size: 5.33333rem;
                 line-height: 6.66667rem;
             }
-        }
-    }
-
-    @media (min-width: 1900px) {
-        .wpp_icon {
-            top: 70vh;
         }
     }
 `;

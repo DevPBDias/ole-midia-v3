@@ -1,5 +1,5 @@
-import instagramIcon from '../../assets/icons/Instagram.webp';
-import twitterIcon from '../../assets/icons/Twitter.webp';
+import instagramIcon from '../../assets/icons/Instagram.png';
+import twitterIcon from '../../assets/icons/Twitter.png';
 import styled from 'styled-components';
 
 export const ContainerIcons = styled.section`

@@ -2,7 +2,7 @@ import { HomeContainer } from './styles'
 import homeImg from '../../assets/images/home_mobile.webp'
 import homeImgTb from '../../assets/images/home_tablet.png'
 import homeImgDk from '../../assets/images/home_desktop.png'
-import Whatsapp from '../../assets/icons/Whatsapp.webp'
+import Whatsapp from '../../assets/icons/Whatsapp.png'
 import arrow from '../../assets/icons/arrow.webp'
 
 function Home() {

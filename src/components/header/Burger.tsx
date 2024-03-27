@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import NavbarLink from './NavbarLink';
 import styled from 'styled-components';
+import IconsNavbar from './IconsNavbar';
 
 type Props = {
   open: boolean,
@@ -55,6 +55,45 @@ export const StyledBurger = styled.div<Props>`
     }
   `;
 
+const NavBar = styled.ul<Props>`
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 1.2rem;
+  
+      a {
+        color: var(--Off-White, #EBE3DE);
+        font-size: 0.88889rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 0.88889rem;
+        text-transform: uppercase;
+  
+        &:hover {
+        color: var(#250900);
+        }
+      }
+    
+  
+      @media (min-width: 300px) and (max-width: 999px) {
+          display: ${({ open }) => (open ? 'flex' : 'none')};;
+          flex-direction: column;
+          justify-content: center;
+          justify-items: center;
+          align-items: center;
+          padding-top: 4em;
+          gap: 1.5em;
+          z-index: 10;
+          background-color: #FF6123;
+          position: fixed;
+          transform: ${({ open }) => (open ? 'translateY(0)' : 'translateY(-100%)')};
+          top: 0;
+          right: 0;
+          height: 26.1em;
+          width: 100%;
+          transition: transform 0.3s ease-in-out;
+      }
+  `;
+
 function Burger() {
   const [open, setOpen] = useState(false);
 
@@ -65,7 +104,15 @@ function Burger() {
         <div className="burger" />
         <div className="burger" />
       </StyledBurger>
-      <NavbarLink open={open} />
+      <NavBar open={open} >
+        <a onClick={() => setOpen(!open)} href="#home">Home</a>
+        <a onClick={() => setOpen(!open)} href="#who">Quem somos</a>
+        <a onClick={() => setOpen(!open)} href="#services">Serviços</a>
+        <a onClick={() => setOpen(!open)} href="#clients">Clientes</a>
+        <a onClick={() => setOpen(!open)} href="#portfolio">Portfólio</a>
+        <a onClick={() => setOpen(!open)} href="#contact">Contato</a>
+        <IconsNavbar />
+      </NavBar>
     </>
   );
 }

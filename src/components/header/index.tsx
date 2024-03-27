@@ -21,7 +21,6 @@ const HeaderBar = styled.header`
     
     @media (min-width: 1000px) {
         padding: 1.3em 4em;
-        position: unset;
     }
 `;
 

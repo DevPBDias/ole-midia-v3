@@ -1,4 +1,4 @@
-import logo from '../../assets/logo/Logo_mobile.webp'
+import logo from '../../assets/logo/Logo_mobile.png'
 import IconsNavbar from '../header/IconsNavbar'
 import { LogoContainer, MidiaContainer } from './styles'
 
