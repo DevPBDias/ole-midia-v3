@@ -22,7 +22,6 @@ export const StyledBurger = styled.div<Props>`
         width: 1.5em;
         height: 0.25em;
         background-color: #250900;
-        border-radius: 10px;
         transform-origin: 1px;
         transition: all 0.3s linear;
     

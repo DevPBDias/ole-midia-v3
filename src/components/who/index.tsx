@@ -1,10 +1,14 @@
 import olemidiaMobile from '../../assets/images/who_mobile.webp'
+import olemidiaTablet from '../../assets/images/who_tab.png'
+import olemidiaDesktop from '../../assets/images/who_dk.png'
 import { ImgContainer, TxtContainer, WhoContainer } from './styles'
 
 function Who() {
     return (
         <WhoContainer id='who'>
             <ImgContainer>
+                <source srcSet={olemidiaDesktop} media="(min-width: 1050px)"/>
+                <source srcSet={olemidiaTablet} media="(min-width: 600px)"/>
                 <img src={olemidiaMobile} alt="oleMidia" />
             </ImgContainer>
             <TxtContainer>
