@@ -137,8 +137,7 @@ export const BtnContainer = styled.section`
 `;
 
 export const ImgCarouselContainer = styled.section`
-    width: 100%;
-    height: 19.56em;
+    width: 1500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,7 +146,7 @@ export const ImgCarouselContainer = styled.section`
         cursor: grab;
         overflow: hidden;
     }
-
+    
     .inner {
         display: flex;
         gap: .6em;
@@ -166,8 +165,6 @@ export const ImgCarouselContainer = styled.section`
     }
 
     @media (min-width: 600px) {
-        height: 28.44em;
-
         .inner {
             gap: .9em;
         }
@@ -179,8 +176,6 @@ export const ImgCarouselContainer = styled.section`
     }
     
     @media (min-width: 1000px) {
-        height: 36.88889em;
-
         .inner {
             gap: 1.33em;
         }

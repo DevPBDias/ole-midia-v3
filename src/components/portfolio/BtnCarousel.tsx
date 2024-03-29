@@ -1,9 +1,15 @@
 import { BtnContainer } from './styles'
 import { motion } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
-import clientsData from '../../data/clientsData'
+import { allArts } from '../../data/portofolioData';
 
-function BtnCarousel() {
+type IBtnProps = {
+    filterBtns: any,
+    filterItems: any,
+    setItems: any,
+}
+
+function BtnCarousel({ filterBtns, filterItems, setItems }: IBtnProps) {
     const carousel = useRef<any>(null);
     const [width, setWidth] = useState(0)
 
@@ -23,14 +29,17 @@ function BtnCarousel() {
                     transition={{ duration: 0.8 }}
                 >
                     <motion.div className='item'>
-                        <button type="button">Todos</button>
+                        <button
+                        onClick={() => setItems(allArts)}
+                        type="button">Todos</button>
                         {
-                            clientsData.map((client) => (
+                            filterBtns?.map((client: string, index: number) => (
                                 <button
                                     type="button"
-                                    key={client.id}
+                                    key={index}
+                                    onClick={() => filterItems(client)}
                                 >
-                                    {client.name}
+                                    {client}
                                 </button>
                             ))
                         }
