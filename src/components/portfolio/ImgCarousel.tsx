@@ -9,12 +9,13 @@ function ImgCarousel({ data }: any) {
     useEffect(() => {
         setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
     }, [])
-    
-    console.log(data);
-    
+
     return (
         <ImgCarouselContainer>
-            <motion.div ref={carousel} className="carousel" whileTap={{ cursor: 'grabbing' }}>
+            <motion.div
+                ref={carousel}
+                className="carousel"
+            >
                 <motion.div
                     className="inner"
                     drag='x'
@@ -24,11 +25,13 @@ function ImgCarousel({ data }: any) {
                     transition={{ duration: 0.8 }}
                 >
                     {
-                            data?.map((art: any, index: number) => (
-                                <motion.div key={index} className="item">
-                                    <img src={art} alt="" />
-                                </motion.div>
-                            ))
+                        data?.map((art: any, index: number) => (
+                            <motion.div
+                            whileTap={{ scale: 0.9 }}
+                            key={index} className="item">
+                                <img src={art} alt="" />
+                            </motion.div>
+                        ))
                     }
                 </motion.div>
             </motion.div>

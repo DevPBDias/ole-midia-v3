@@ -7,9 +7,6 @@ import Portfolio from './components/portfolio'
 import Services from './components/services'
 import Who from './components/who'
 
-// submit do form
-// filtro do botao
-
 function App() {
   return (
       <>

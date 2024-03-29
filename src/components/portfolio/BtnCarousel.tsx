@@ -19,8 +19,6 @@ function BtnCarousel({ filterBtns, filterItems, setItems, active, setActive }: I
         setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
     }, [])
 
-    console.log(filterBtns);
-
     const handleActiveBtn = () => {
         setActive(allArts.id)
         setItems(allArts.arts)
