@@ -2,10 +2,10 @@ import { useState } from "react"
 import BtnCarousel from "./BtnCarousel"
 import ImgCarousel from "./ImgCarousel"
 import { PortfolioContainer } from "./styles"
-import { portfolioData } from "../../data/portfolioData"
+import { allArts, portfolioData } from "../../data/portfolioData"
 
 function Portfolio() {
-    const [items, setItems] = useState<any>(portfolioData[0].arts)
+    const [items, setItems] = useState<any>(allArts.arts)
     const [active, setActive] = useState<number>(1)
 
     const filterBtns = portfolioData.map((value) => value.btnName)
