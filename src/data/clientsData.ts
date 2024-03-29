@@ -4,12 +4,12 @@ import image3 from '../assets/images/roni.webp'
 import image4 from '../assets/images/sandrinho.webp'
 import image5 from '../assets/images/raquel.webp'
 import image6 from '../assets/images/heman.webp'
-import image1_dk from '../assets/images/giu_dk.png'
-import image2_dk from '../assets/images/leo_dk.png'
-import image3_dk from '../assets/images/roni_dk.png'
-import image4_dk from '../assets/images/sandrinho_dk.png'
-import image5_dk from '../assets/images/raquel_dk.png'
-import image6_dk from '../assets/images/heman_dk.png'
+import image1_dk from '../assets/images/giu_dk.webp'
+import image2_dk from '../assets/images/leo_dk.webp'
+import image3_dk from '../assets/images/roni_dk.webp'
+import image4_dk from '../assets/images/sandrinho_dk.webp'
+import image5_dk from '../assets/images/raquel_dk.webp'
+import image6_dk from '../assets/images/heman_dk.webp'
 
 export type IClientProps = {
     id: number,

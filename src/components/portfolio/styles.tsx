@@ -103,6 +103,10 @@ export const BtnContainer = styled.section`
                 background: var(--Vibrant-Orange, #FF6123);
             }
         }
+
+        .active {
+            background: var(--Vibrant-Orange, #FF6123);
+        }
     }
 
     @media (min-width: 600px) {
@@ -137,7 +141,7 @@ export const BtnContainer = styled.section`
 `;
 
 export const ImgCarouselContainer = styled.section`
-    width: 1500px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;

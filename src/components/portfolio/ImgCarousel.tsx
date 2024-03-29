@@ -10,13 +10,15 @@ function ImgCarousel({ data }: any) {
         setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
     }, [])
     
+    console.log(data);
+    
     return (
         <ImgCarouselContainer>
-            <motion.div className="carousel" whileTap={{ cursor: 'grabbing' }}>
+            <motion.div ref={carousel} className="carousel" whileTap={{ cursor: 'grabbing' }}>
                 <motion.div
                     className="inner"
                     drag='x'
-                    dragConstraints={{ right: width, left: -width }}
+                    dragConstraints={{ right: 0, left: -width }}
                     initial={{ x: 100 }}
                     animate={{ x: 0 }}
                     transition={{ duration: 0.8 }}

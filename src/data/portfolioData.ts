@@ -41,14 +41,11 @@ import rafaelArte5 from '../assets/portfolio/Rafael Moura/05.webp'
 import rafaelArte6 from '../assets/portfolio/Rafael Moura/06.webp'
 import rafaelArte7 from '../assets/portfolio/Rafael Moura/07.webp'
 
-export const allArts = [
-    giuArte1, giuArte2, giuArte3, giuArte4, giuArte5, giuArte6, giuArte7,
-    roniArte1, roniArte2, roniArte3, roniArte4, roniArte5, roniArte6, roniArte7,
-    raquelArte1, raquelArte2, raquelArte3, raquelArte4, raquelArte5, raquelArte6, raquelArte7,
-    rafaelArte1, rafaelArte2, rafaelArte3, rafaelArte4, rafaelArte5, rafaelArte6, rafaelArte7,
-    leoArte1, leoArte2, leoArte3, leoArte4, leoArte5, leoArte6, leoArte7,
-    sandArte1, sandArte2, sandArte3, sandArte4, sandArte5, sandArte6, sandArte7
-]
+export const allArts = {
+    id: 1,
+    btnName: 'Todos',
+    arts: [giuArte1, leoArte1, roniArte1, sandArte1, raquelArte1, rafaelArte1, giuArte2]
+}
 
 export type IPortfolio = {
     id: number,
@@ -56,7 +53,7 @@ export type IPortfolio = {
     arts: string[],
 }
 
-export const portofolioData: IPortfolio[] = [
+export const portfolioData: IPortfolio[] = [
     {
         id: 2,
         btnName: 'Giuliano',

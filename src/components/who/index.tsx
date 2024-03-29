@@ -1,6 +1,6 @@
 import olemidiaMobile from '../../assets/images/who_mobile.webp'
-import olemidiaTablet from '../../assets/images/who_tab.png'
-import olemidiaDesktop from '../../assets/images/who_dk.png'
+import olemidiaTablet from '../../assets/images/who_tab.webp'
+import olemidiaDesktop from '../../assets/images/who_dk.webp'
 import { ImgContainer, TxtContainer, WhoContainer } from './styles'
 
 function Who() {

@@ -1,15 +1,15 @@
 import image1 from '../assets/images/assessoria.webp'
 import image2 from '../assets/images/design.webp'
 import image3 from '../assets/images/fotografia.webp'
-import image4 from '../assets/images/edição.webp'
-import image5 from '../assets/images/gestão.webp'
+import image4 from '../assets/images/video.webp'
+import image5 from '../assets/images/gestao.webp'
 import image6 from '../assets/images/publico.webp'
-import image1_dk from '../assets/images/assessoria_dk.png'
-import image2_dk from '../assets/images/design_dk.png'
-import image3_dk from '../assets/images/foto_dk.png'
-import image4_dk from '../assets/images/video_dk.png'
-import image5_dk from '../assets/images/gestao_dk.png'
-import image6_dk from '../assets/images/publi_dk.png'
+import image1_dk from '../assets/images/assessoria_dk.webp'
+import image2_dk from '../assets/images/design_dk.webp'
+import image3_dk from '../assets/images/foto_dk.webp'
+import image4_dk from '../assets/images/video_dk.webp'
+import image5_dk from '../assets/images/gestao_dk.webp'
+import image6_dk from '../assets/images/publi_dk.webp'
 
 export type IServiceProps = {
     id: number,

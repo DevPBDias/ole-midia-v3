@@ -52,7 +52,7 @@ export const HomeContainer = styled.section`
         position: fixed;
         z-index: 3;
         right: 10vw;
-        top: 90vh;
+        top: 80vh;
         width: 2.66667rem;
         height: 2.66667rem;
         flex-shrink: 0;

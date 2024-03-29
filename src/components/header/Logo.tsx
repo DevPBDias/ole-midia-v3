@@ -1,5 +1,4 @@
-import logo from '../../assets/logo/Logo_mobile.png'
-import logoDk from '../../assets/logo/Default_Logo.png'
+import logo from '../../assets/icons/logo_ole.webp'
 import styled from 'styled-components';
 
 
@@ -36,7 +35,6 @@ export const OleLogoContainer = styled.picture`
 function Logo() {
   return (
     <OleLogoContainer>
-      <source srcSet={logoDk} media='(min-width=600px)' />
       <img src={logo} alt="" />
     </OleLogoContainer>
   )

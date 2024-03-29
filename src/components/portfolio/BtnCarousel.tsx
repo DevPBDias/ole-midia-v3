@@ -1,21 +1,30 @@
 import { BtnContainer } from './styles'
 import { motion } from "framer-motion"
 import { useEffect, useRef, useState } from "react"
-import { allArts } from '../../data/portofolioData';
+import { allArts } from '../../data/portfolioData';
 
 type IBtnProps = {
     filterBtns: any,
     filterItems: any,
     setItems: any,
+    active: any,
+    setActive: any,
 }
 
-function BtnCarousel({ filterBtns, filterItems, setItems }: IBtnProps) {
+function BtnCarousel({ filterBtns, filterItems, setItems, active, setActive }: IBtnProps) {
     const carousel = useRef<any>(null);
     const [width, setWidth] = useState(0)
 
     useEffect(() => {
         setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
     }, [])
+
+    console.log(filterBtns);
+
+    const handleActiveBtn = () => {
+        setActive(allArts.id)
+        setItems(allArts.arts)
+    }
 
     return (
         <BtnContainer>
@@ -30,13 +39,15 @@ function BtnCarousel({ filterBtns, filterItems, setItems }: IBtnProps) {
                 >
                     <motion.div className='item'>
                         <button
-                        onClick={() => setItems(allArts)}
-                        type="button">Todos</button>
+                            className={ active === 1 ? 'active' : '' }
+                            onClick={handleActiveBtn}
+                            type="button">Todos</button>
                         {
-                            filterBtns?.map((client: string, index: number) => (
+                            filterBtns?.map((client: any, index: number) => (
                                 <button
                                     type="button"
                                     key={index}
+                                    className={ active === (index + 2) ? 'active' : '' }
                                     onClick={() => filterItems(client)}
                                 >
                                     {client}
