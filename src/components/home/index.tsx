@@ -2,8 +2,9 @@ import { HomeContainer } from './styles'
 import homeImg from '../../assets/images/home_mobile.webp'
 import homeImgTb from '../../assets/images/home_tablet.webp'
 import homeImgDk from '../../assets/images/home_desktop.webp'
-import Whatsapp from '../../assets/icons/Whatsapp.png'
 import arrow from '../../assets/icons/arrow.webp'
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import wpp_logo from '../../assets/icons/wpp_avatar.png'
 
 function Home() {
   return (
@@ -17,7 +18,15 @@ function Home() {
         <p>Sua imagem, nosso plano de jogo!</p>
       </section>
       <img className='arrow_icon' src={arrow} alt="arrow" />
-      <img className='wpp_icon' src={Whatsapp} alt="" />
+      <FloatingWhatsApp
+        phoneNumber='+55 62 9972-1607'
+        accountName='Olé Mídia'
+        statusMessage=''
+        chatMessage='Olá, como podemos te ajudar?'
+        placeholder='Digite sua mensagem...'
+        className='wpp_icon'
+        avatar={wpp_logo}
+      />
     </HomeContainer>
   )
 }
