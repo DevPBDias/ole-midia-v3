@@ -48,11 +48,11 @@ export const HomeContainer = styled.section`
         flex-shrink: 0;
     }
 
-    .wpp_icon {
+    .floating-whatsapp-button {
         position: fixed;
         z-index: 3;
         right: 10vw;
-        top: 80vh;
+        top: 75vh;
         width: 2.66667rem;
         height: 2.66667rem;
         flex-shrink: 0;

@@ -19,12 +19,12 @@ function Home() {
       </section>
       <img className='arrow_icon' src={arrow} alt="arrow" />
       <FloatingWhatsApp
-        phoneNumber='+55 62 9972-1607'
+        phoneNumber='+55 62 99972-1607'
         accountName='Olé Mídia'
         statusMessage=''
         chatMessage='Olá, como podemos te ajudar?'
         placeholder='Digite sua mensagem...'
-        className='wpp_icon'
+        buttonClassName='floating-whatsapp-button'
         avatar={wpp_logo}
       />
     </HomeContainer>
