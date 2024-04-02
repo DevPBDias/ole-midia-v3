@@ -5,7 +5,7 @@ import image4 from '../assets/images/sandrinho.webp'
 import image5 from '../assets/images/raquel.webp'
 import image6 from '../assets/images/heman.webp'
 import image1_dk from '../assets/images/giu_dk.webp'
-import image2_dk from '../assets/images/leo_dk.webp'
+import image2_dk from '../assets/images/leo.webp'
 import image3_dk from '../assets/images/roni_dk.webp'
 import image4_dk from '../assets/images/sandrinho_dk.webp'
 import image5_dk from '../assets/images/raquel_dk.webp'
@@ -37,7 +37,7 @@ const clientsData: IClientProps[] = [
     {
         id: 3,
         name: 'Roni Moura',
-        team: 'Atlético-GO',
+        team: 'Atlético Goianiense',
         image: image3,
         image_dk: image3_dk,
     },

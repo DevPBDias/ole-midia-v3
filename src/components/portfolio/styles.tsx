@@ -74,6 +74,7 @@ export const BtnContainer = styled.section`
 
     .inner {
         display: flex;
+        gap: .6em;
     }
     
     .item {

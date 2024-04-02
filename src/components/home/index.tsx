@@ -3,8 +3,7 @@ import homeImg from '../../assets/images/home_mobile.webp'
 import homeImgTb from '../../assets/images/home_tablet.webp'
 import homeImgDk from '../../assets/images/home_desktop.webp'
 import arrow from '../../assets/icons/arrow.webp'
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
-import wpp_logo from '../../assets/icons/wpp_avatar.png'
+import wpp_logo from '../../assets/icons/Whatsapp.webp'
 
 function Home() {
   return (
@@ -18,15 +17,13 @@ function Home() {
         <p>Sua imagem, nosso plano de jogo!</p>
       </section>
       <img className='arrow_icon' src={arrow} alt="arrow" />
-      <FloatingWhatsApp
-        phoneNumber='+55 62 99972-1607'
-        accountName='Olé Mídia'
-        statusMessage=''
-        chatMessage='Olá, como podemos te ajudar?'
-        placeholder='Digite sua mensagem...'
-        buttonClassName='floating-whatsapp-button'
-        avatar={wpp_logo}
-      />
+      <a
+        target='_blank'
+        rel='noopener noreferrer'
+        className='floating-whatsapp-button'
+        href='https://api.whatsapp.com/send/?phone=+55%2062%2099972-1607&text=Gostaria%20de%20conversar%20sobre%20...'>
+        <img src={wpp_logo} alt="wpp icon" />
+      </a>
     </HomeContainer>
   )
 }
