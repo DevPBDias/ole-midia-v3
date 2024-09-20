@@ -4,11 +4,6 @@
 
 Site da Olé Mídia em que conta a história da empresa, disponibiliza links para suas redes sociais, enumera os seus serviços e clientes atuais, mostra seu portfólio e possui um campo de texto para entrar em contato com a empresa.
 
-<details><summary>Exemplo</summary>
-![Teste Legaplan (1)](https://github.com/user-attachments/assets/9dd58718-ba7d-40f3-bf06-8d02031cb6ce)
-</details>
-
-
 
 <details><summary>Stack utilizada</summary>
 <ul>
