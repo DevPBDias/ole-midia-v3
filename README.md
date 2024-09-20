@@ -4,6 +4,7 @@
 
 Site da Olé Mídia em que conta a história da empresa, disponibiliza links para suas redes sociais, enumera os seus serviços e clientes atuais, mostra seu portfólio e possui um campo de texto para entrar em contato com a empresa.
 
+![Alt text](https://github.com/user-attachments/assets/ddd749bf-b0a0-448b-8d65-c25b4f93aa2c)
 
 <details><summary>Stack utilizada</summary>
 <ul>
