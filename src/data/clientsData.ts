@@ -4,12 +4,15 @@ import image3 from "../assets/images/roni.webp";
 import image4 from "../assets/images/sandrinho.webp";
 import image5 from "../assets/images/raquel.webp";
 import image6 from "../assets/images/heman.webp";
+import image7 from "../assets/images/Luis_Eduardo.png";
 import image1_dk from "../assets/images/giu_dk.webp";
 import image2_dk from "../assets/images/leo.webp";
 import image3_dk from "../assets/images/roni_dk.webp";
 import image4_dk from "../assets/images/sandrinho_dk.webp";
 import image5_dk from "../assets/images/raquel_dk.webp";
 import image6_dk from "../assets/images/heman_dk.webp";
+import image7_dk from "../assets/images/Luis_Eduardo_dk.png";
+
 
 export type IClientProps = {
   id: number;
@@ -61,6 +64,13 @@ const clientsData: IClientProps[] = [
     team: "Ex-Atleta",
     image: image6,
     image_dk: image6_dk,
+  },
+  {
+    id: 7,
+    name: "Luis Eduardo",
+    team: "Goiás (U-17)",
+    image: image7,
+    image_dk: image7_dk,
   },
 ];
 
