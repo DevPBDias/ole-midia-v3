@@ -3,6 +3,7 @@ import image2 from "../assets/images/leo.webp";
 import image3 from "../assets/images/roni.webp";
 import image4 from "../assets/images/sandrinho.webp";
 import image7 from "../assets/images/Luis_Eduardo.png";
+import image8 from "../assets/images/Gabardo.png";
 import image1_dk from "../assets/images/giu_dk.webp";
 import image2_dk from "../assets/images/leo.webp";
 import image3_dk from "../assets/images/roni_dk.webp";
@@ -58,7 +59,7 @@ const clientsData: IClientProps[] = [
     id: 6,
     name: "Gabardo Jr.",
     team: "ABECAT (Treinardor)",
-    image: image7,
+    image: image8,
     image_dk: image8_dk,
   },
 ];
