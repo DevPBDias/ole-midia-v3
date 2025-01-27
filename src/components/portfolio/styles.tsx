@@ -157,6 +157,8 @@ export const ImgCarouselContainer = styled.section`
   .item {
     min-width: 10.98em;
     min-height: 19.56em;
+    width: 10.98em;
+    height: 19.56em;
 
     img {
       width: 100%;

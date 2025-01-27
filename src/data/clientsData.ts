@@ -1,12 +1,11 @@
-import image1 from "../assets/images/clients/giu.webp";
+import image1 from "../assets/images/clients/giu.png";
 import image2 from "../assets/images/clients/leo.webp";
 import image3 from "../assets/images/clients/roni.png";
-import image4 from "../assets/images/clients/sandrinho.webp";
+import image4 from "../assets/images/clients/sandrinho.png";
 import image5 from "../assets/images/clients/Luis_Eduardo.png";
-import image6 from "../assets/images/clients/Gabardo.png";
-import image7 from "../assets/images/clients/rudi.png";
-import image8 from "../assets/images/clients/fernando.png";
-import image9 from "../assets/images/clients/moises.png";
+import image6 from "../assets/images/clients/gabardo.png";
+import image7 from "../assets/images/clients/fernando.png";
+import image8 from "../assets/images/clients/moises.png";
 
 export type IClientProps = {
   id: number;
@@ -54,21 +53,15 @@ const clientsData: IClientProps[] = [
   },
   {
     id: 7,
-    name: "Rudi",
-    team: "Praia Clube - Futsal",
+    name: "Fernando",
+    team: "Athletico-PR",
     image: image7,
   },
   {
     id: 8,
-    name: "Fernando",
-    team: "Athletico-PR",
-    image: image8,
-  },
-  {
-    id: 9,
     name: "Moisés",
     team: "CSKA (RUS)",
-    image: image9,
+    image: image8,
   },
 ];
 

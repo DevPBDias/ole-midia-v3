@@ -26,7 +26,7 @@ function BtnCarousel({
   }, []);
 
   const handleActiveBtn = () => {
-    setActive(allArts.id);
+    setActive(0);
     setItems(allArts.arts);
   };
 
