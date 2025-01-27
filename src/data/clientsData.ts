@@ -36,7 +36,7 @@ const clientsData: IClientProps[] = [
   {
     id: 4,
     name: "Sandrinho",
-    team: "Goianésia (GO)",
+    team: "Goianésia",
     image: image4,
   },
   {
