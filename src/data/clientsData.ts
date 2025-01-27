@@ -3,7 +3,7 @@ import image2 from "../assets/images/clients/leo.webp";
 import image3 from "../assets/images/clients/roni.png";
 import image4 from "../assets/images/clients/sandrinho.png";
 import image5 from "../assets/images/clients/Luis_Eduardo.png";
-import image6 from "../assets/images/clients/gabardo.png";
+import image6 from "../assets/images/clients/Gabardo.png";
 import image7 from "../assets/images/clients/fernando.png";
 import image8 from "../assets/images/clients/moises.png";
 
