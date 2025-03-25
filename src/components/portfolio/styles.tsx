@@ -32,15 +32,13 @@ export const PortfolioContainer = styled.section`
     line-height: 1.06667rem;
     text-transform: uppercase;
     margin-top: 2.5rem;
-    -webkit-box-shadow: 7px 9px 12px -1px rgba(0, 0, 0, 0.51);
-    -moz-box-shadow: 7px 9px 12px -1px rgba(0, 0, 0, 0.51);
-    box-shadow: 7px 9px 12px -1px rgba(0, 0, 0, 0.51);
-  }
+    transition: background 0.3s ease-in-out;
 
-  a:hover {
-    color: #ffffff;
-    opacity: 0.9;
-    background: var(--Dark-Brown, #250900);
+    &:hover {
+      color: #ffffff;
+      opacity: 0.9;
+      background: var(--Dark-Brown, #250900);
+    }
   }
 
   @media (min-width: 600px) {
@@ -108,6 +106,12 @@ export const BtnContainer = styled.section`
       line-height: 1.04056rem;
       text-transform: uppercase;
       background: var(--Off-White, #ebe3de);
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+
+      &:hover {
+        background: var(--Vibrant-Orange, #ff6123);
+      }
     }
 
     .active {

@@ -126,15 +126,13 @@ export const FormContainer = styled.form`
     line-height: 1.33333rem;
     text-transform: uppercase;
     margin-top: 0.9em;
-    -webkit-box-shadow: 7px 9px 12px -1px rgba(0, 0, 0, 0.51);
-    -moz-box-shadow: 7px 9px 12px -1px rgba(0, 0, 0, 0.51);
-    box-shadow: 7px 9px 12px -1px rgba(0, 0, 0, 0.51);
-  }
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
 
-  button:hover {
-    background: #ffffff;
-    opacity: 0.9;
-    color: var(--Dark-Brown, #250900);
+    &:hover {
+      background: #ffffff;
+      color: var(--Dark-Brown, #250900);
+    }
   }
 
   span {

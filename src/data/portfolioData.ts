@@ -10,6 +10,8 @@ import leoArte2 from "../assets/portfolio/Leo Gugiel - Manter/2.webp";
 import leoArte3 from "../assets/portfolio/Leo Gugiel - Manter/3.webp";
 import leoArte4 from "../assets/portfolio/Leo Gugiel - Manter/4.webp";
 import leoArte5 from "../assets/portfolio/Leo Gugiel - Manter/5.webp";
+import leoArte6 from "../assets/portfolio/Leo Gugiel - Manter/6.webp";
+import leoArte7 from "../assets/portfolio/Leo Gugiel - Manter/7.webp";
 import roniArte1 from "../assets/portfolio/Roni Moura - Manter/1.webp";
 import roniArte2 from "../assets/portfolio/Roni Moura - Manter/2.webp";
 import roniArte3 from "../assets/portfolio/Roni Moura - Manter/3.webp";
@@ -20,6 +22,10 @@ import roniArte7 from "../assets/portfolio/Roni Moura - Manter/7.webp";
 import sandArte1 from "../assets/portfolio/Sandrinho - Alterar/1.webp";
 import sandArte2 from "../assets/portfolio/Sandrinho - Alterar/2.webp";
 import sandArte3 from "../assets/portfolio/Sandrinho - Alterar/3.jpg";
+import sandArte4 from "../assets/portfolio/Sandrinho - Alterar/4.webp";
+import sandArte5 from "../assets/portfolio/Sandrinho - Alterar/5.webp";
+import sandArte6 from "../assets/portfolio/Sandrinho - Alterar/6.webp";
+import sandArte7 from "../assets/portfolio/Sandrinho - Alterar/7.webp";
 import luisArte1 from "../assets/portfolio/Luis Eduardo - Manter/1.webp";
 import luisArte2 from "../assets/portfolio/Luis Eduardo - Manter/2.webp";
 import luisArte3 from "../assets/portfolio/Luis Eduardo - Manter/3.webp";
@@ -92,7 +98,15 @@ export const portfolioData: IPortfolio[] = [
   {
     id: 2,
     btnName: "Léo Gugiel",
-    arts: [leoArte1, leoArte2, leoArte3, leoArte4, leoArte5],
+    arts: [
+      leoArte1,
+      leoArte2,
+      leoArte3,
+      leoArte4,
+      leoArte5,
+      leoArte6,
+      leoArte7,
+    ],
   },
   {
     id: 3,
@@ -110,7 +124,15 @@ export const portfolioData: IPortfolio[] = [
   {
     id: 4,
     btnName: "Sandrinho",
-    arts: [sandArte1, sandArte2, sandArte3],
+    arts: [
+      sandArte1,
+      sandArte2,
+      sandArte3,
+      sandArte4,
+      sandArte5,
+      sandArte6,
+      sandArte7,
+    ],
   },
   {
     id: 5,
