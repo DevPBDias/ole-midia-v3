@@ -1,11 +1,14 @@
-import image1 from "../assets/images/clients/giu.png";
-import image2 from "../assets/images/clients/leo.webp";
-import image3 from "../assets/images/clients/roni.png";
-import image4 from "../assets/images/clients/sandrinho.png";
-import image5 from "../assets/images/clients/Luis_Eduardo.png";
+import image1 from "../assets/images/clients/Giuliano-CAP.webp";
+import image2 from "../assets/images/clients/LeoGugiel-Benfica.webp";
+import image3 from "../assets/images/clients/RoniMoura-Mirassol.webp";
+import image4 from "../assets/images/clients/Sandrinho-Goianesia.webp";
+import image5 from "../assets/images/clients/LuisEduardo-GoiasU17.webp";
 import image6 from "../assets/images/clients/Gabardo.png";
-import image7 from "../assets/images/clients/fernando.png";
-import image8 from "../assets/images/clients/moises.png";
+import image7 from "../assets/images/clients/Fernando-CAP.webp";
+import image8 from "../assets/images/clients/Moises-CSKA.webp";
+import image9 from "../assets/images/clients/LeandoLima-SK ProstějovTchéquia.webp";
+import image10 from "../assets/images/clients/LeoJaba-SãoBernardo.webp";
+import image11 from "../assets/images/clients/LucasCafé-Brasiliense.webp";
 
 export type IClientProps = {
   id: number;
@@ -18,7 +21,7 @@ const clientsData: IClientProps[] = [
   {
     id: 1,
     name: "Giuliano",
-    team: "Santos",
+    team: "Athletico-PR",
     image: image1,
   },
   {
@@ -29,39 +32,57 @@ const clientsData: IClientProps[] = [
   },
   {
     id: 3,
-    name: "Roni Moura",
-    team: "Mirassol",
-    image: image3,
-  },
-  {
-    id: 4,
-    name: "Sandrinho",
-    team: "Goianésia",
-    image: image4,
-  },
-  {
-    id: 5,
-    name: "Luis Eduardo",
-    team: "Goiás (U-17)",
-    image: image5,
-  },
-  {
-    id: 6,
-    name: "Gabardo Jr.",
-    team: "ABECAT (Treinador)",
-    image: image6,
-  },
-  {
-    id: 7,
     name: "Fernando",
     team: "Athletico-PR",
     image: image7,
   },
   {
-    id: 8,
+    id: 4,
     name: "Moisés",
     team: "CSKA (RUS)",
     image: image8,
+  },
+  {
+    id: 5,
+    name: "Roni Moura",
+    team: "Mirassol",
+    image: image3,
+  },
+  {
+    id: 6,
+    name: "Sandrinho",
+    team: "Goianésia",
+    image: image4,
+  },
+  {
+    id: 7,
+    name: "Luis Eduardo",
+    team: "Goiás (U-17)",
+    image: image5,
+  },
+  {
+    id: 8,
+    name: "Gabardo Jr.",
+    team: "ABECAT (Treinador)",
+    image: image6,
+  },
+  {
+    id: 9,
+    name: "Leando Lima",
+    team: "SK Prostějov (Rep. Theca)",
+    image: image9,
+  },
+  {
+    id: 10,
+    name: "Leo Jabá",
+    team: "São Bernardo",
+    image: image10,
+  },
+  {
+    id: 11,
+    name: "Lucas Café",
+    team: "Brasiliense",
+    image: image11,
   },
 ];
 

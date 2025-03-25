@@ -8,7 +8,7 @@ export const ClientsContainer = styled.section`
   align-items: center;
   justify-items: center;
   background-color: var(--Dark-Brown, #ff6123);
-  padding: 2.2em 0.8em;
+  padding: 2.2em 1.33em;
 
   h5 {
     color: var(--Vibrant-Orange, #250900);
@@ -24,8 +24,7 @@ export const ClientsContainer = styled.section`
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    justify-items: center;
-    gap: 0.5em;
+    gap: 1.5rem;
     margin-top: 2em;
   }
 
@@ -33,7 +32,7 @@ export const ClientsContainer = styled.section`
     padding: 3.56em 1.78em;
 
     section {
-      gap: 1em;
+      gap: 20px;
     }
 
     h5 {
@@ -51,8 +50,7 @@ export const ClientsContainer = styled.section`
     }
 
     section {
-      gap: 1.5em;
-      flex-flow: row wrap;
+      gap: 20px;
       margin-top: 4.6em;
     }
   }
@@ -61,14 +59,14 @@ export const ClientsContainer = styled.section`
     padding: 5.33em 4em;
 
     section {
-      gap: 2.5em;
+      gap: 20px;
     }
   }
 `;
 
 export const CardContainer = styled.div`
-  width: 8em;
-  height: 11em;
+  width: 100%;
+  height: 18rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -76,15 +74,26 @@ export const CardContainer = styled.div`
   justify-items: center;
   border-radius: 0.88889em;
   position: relative;
+  object-fit: cover;
 
-  @media (min-width: 600px) {
-    width: 18em;
-    height: 26em;
+  @media (min-width: 350px) {
+    height: 21rem;
   }
 
-  @media (min-width: 1000px) {
-    width: 23.11111rem;
-    height: 34.66667rem;
+  @media (min-width: 500px) {
+    width: calc(45% - 20px); /* 4 cards in a row with 20px gap */
+  }
+
+  @media (min-width: 900px) {
+    width: calc(33% - 20px); /* 4 cards in a row with 20px gap */
+  }
+
+  @media (min-width: 1200px) {
+    width: calc(25% - 20px); /* 4 cards in a row with 20px gap */
+  }
+
+  @media (min-width: 1600px) {
+    height: 30rem;
   }
 `;
 
@@ -110,7 +119,7 @@ export const ImgContainer = styled.picture`
 
 export const TextContainer = styled.div`
   width: 100%;
-  height: 2.28rem;
+  height: 3.2rem;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -125,7 +134,12 @@ export const TextContainer = styled.div`
   border-radius: 0 0 0.89em 0.89em;
 
   @media (min-width: 600px) {
-    height: 5.8em;
+    height: 4rem;
+    padding: 0.88889rem;
+  }
+
+  @media (min-width: 1400px) {
+    height: 5.2rem;
     padding: 0.88889rem;
   }
 `;
@@ -138,7 +152,7 @@ export const TextContent = styled.div`
 
   h3 {
     color: var(--Vibrant-Orange, #ff6123);
-    font-size: 0.66667rem;
+    font-size: 0.9rem;
     font-style: normal;
     font-weight: 700;
     line-height: 0.88889rem;
@@ -147,20 +161,20 @@ export const TextContent = styled.div`
 
   p {
     color: var(--Off-White, #ebe3de);
-    font-size: 0.44444rem;
+    font-size: 0.67rem;
     font-style: italic;
     font-weight: 400;
   }
 
   @media (min-width: 600px) {
     h3 {
-      font-size: 1.33333rem;
+      font-size: 1.2rem;
       font-weight: 800;
       line-height: 2rem;
     }
 
     p {
-      font-size: 1rem;
+      font-size: 0.8rem;
       font-weight: 500;
       line-height: 1.33333rem;
     }
