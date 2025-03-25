@@ -8,7 +8,7 @@ export const ClientsContainer = styled.section`
   align-items: center;
   justify-items: center;
   background-color: var(--Dark-Brown, #ff6123);
-  padding: 2.2em 1.33em;
+  padding: 2.2em 9%;
 
   h5 {
     color: var(--Vibrant-Orange, #250900);
@@ -24,17 +24,11 @@ export const ClientsContainer = styled.section`
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-top: 2em;
   }
 
   @media (min-width: 600px) {
-    padding: 3.56em 1.78em;
-
-    section {
-      gap: 20px;
-    }
-
     h5 {
       font-size: 2.66667rem;
       line-height: 3.11111rem;
@@ -42,33 +36,18 @@ export const ClientsContainer = styled.section`
   }
 
   @media (min-width: 1000px) {
-    padding: 5.33em 2em;
-
     h5 {
       font-size: 3.55556rem;
       line-height: 4rem;
-    }
-
-    section {
-      gap: 20px;
-      margin-top: 4.6em;
-    }
-  }
-
-  @media (min-width: 1500px) {
-    padding: 5.33em 4em;
-
-    section {
-      gap: 20px;
     }
   }
 `;
 
 export const CardContainer = styled.div`
-  width: 100%;
-  height: 18rem;
+  width: 98.29px;
+  height: 117.16px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   justify-items: center;
@@ -76,24 +55,24 @@ export const CardContainer = styled.div`
   position: relative;
   object-fit: cover;
 
-  @media (min-width: 350px) {
-    height: 21rem;
+  @media (min-width: 700px) {
+    width: 192.71px;
+    height: 229.68px;
   }
 
-  @media (min-width: 500px) {
-    width: calc(45% - 20px); /* 4 cards in a row with 20px gap */
+  @media (min-width: 1400px) {
+    width: 271px;
+    height: 323px;
   }
 
-  @media (min-width: 900px) {
-    width: calc(33% - 20px); /* 4 cards in a row with 20px gap */
+  @media (min-width: 1800px) {
+    width: 335.6px;
+    height: 400px;
   }
 
-  @media (min-width: 1200px) {
-    width: calc(25% - 20px); /* 4 cards in a row with 20px gap */
-  }
-
-  @media (min-width: 1600px) {
-    height: 30rem;
+  @media (min-width: 2200px) {
+    width: 456.6px;
+    height: 550px;
   }
 `;
 
@@ -119,7 +98,6 @@ export const ImgContainer = styled.picture`
 
 export const TextContainer = styled.div`
   width: 100%;
-  height: 3.2rem;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -129,18 +107,12 @@ export const TextContainer = styled.div`
   justify-content: center;
   align-items: center;
   justify-items: center;
-  padding: 0.4em;
+  padding: 0.3rem 0.4rem;
   background-color: var(--Vibrant-Orange, #250900);
   border-radius: 0 0 0.89em 0.89em;
 
-  @media (min-width: 600px) {
-    height: 4rem;
-    padding: 0.88889rem;
-  }
-
-  @media (min-width: 1400px) {
-    height: 5.2rem;
-    padding: 0.88889rem;
+  @media (min-width: 1300px) {
+    padding: 0.8rem 0.4rem;
   }
 `;
 
@@ -152,21 +124,45 @@ export const TextContent = styled.div`
 
   h3 {
     color: var(--Vibrant-Orange, #ff6123);
-    font-size: 0.9rem;
+    width: 100%;
+    font-size: 0.6rem;
     font-style: normal;
     font-weight: 700;
     line-height: 0.88889rem;
     text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   p {
     color: var(--Off-White, #ebe3de);
-    font-size: 0.67rem;
+    width: 100%;
+    font-size: 0.45rem;
     font-style: italic;
     font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 760px) {
+    h3 {
+      font-size: 0.9rem;
+      font-weight: 800;
+      line-height: 2rem;
+    }
+
+    p {
+      font-size: 0.7rem;
+      font-weight: 500;
+      line-height: 1.33333rem;
+    }
+  }
+
+  @media (min-width: 1300px) {
     h3 {
       font-size: 1.2rem;
       font-weight: 800;
@@ -174,7 +170,21 @@ export const TextContent = styled.div`
     }
 
     p {
-      font-size: 0.8rem;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.33333rem;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      line-height: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
       font-weight: 500;
       line-height: 1.33333rem;
     }
