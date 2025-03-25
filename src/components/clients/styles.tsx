@@ -8,7 +8,7 @@ export const ClientsContainer = styled.section`
   align-items: center;
   justify-items: center;
   background-color: var(--Dark-Brown, #ff6123);
-  padding: 5rem 9%;
+  padding: 5rem 5%;
 
   h5 {
     color: var(--Vibrant-Orange, #250900);
@@ -36,6 +36,8 @@ export const ClientsContainer = styled.section`
   }
 
   @media (min-width: 1000px) {
+    padding: 5rem 9%;
+
     h5 {
       font-size: 3.55556rem;
       line-height: 4rem;
