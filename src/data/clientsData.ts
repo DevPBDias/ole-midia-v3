@@ -69,7 +69,7 @@ const clientsData: IClientProps[] = [
   },
   {
     id: 9,
-    name: "Leando Lima",
+    name: "Leandro Lima",
     team: "SK Prostějov (Rep. Theca)",
     image: image9,
   },
