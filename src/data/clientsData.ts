@@ -9,6 +9,7 @@ import image8 from "../assets/images/clients/Moises-CSKA.webp";
 import image9 from "../assets/images/clients/LeandoLima-SK ProstějovTchéquia.webp";
 import image10 from "../assets/images/clients/LeoJaba-SãoBernardo.webp";
 import image11 from "../assets/images/clients/LucasCafé-Brasiliense.webp";
+import image12 from "../assets/images/clients/CAMV_Sports_Supervôlei.webp";
 
 export type IClientProps = {
   id: number;
@@ -63,7 +64,7 @@ const clientsData: IClientProps[] = [
   {
     id: 8,
     name: "Gabardo Jr.",
-    team: "ABECAT (Treinador)",
+    team: "São José - RS (Treinador)",
     image: image6,
   },
   {
@@ -83,6 +84,12 @@ const clientsData: IClientProps[] = [
     name: "Lucas Café",
     team: "Brasiliense",
     image: image11,
+  },
+  {
+    id: 12,
+    name: "CAMV Sports Supervôlei",
+    team: "Escolinha de Vôlei",
+    image: image12,
   },
 ];
 
