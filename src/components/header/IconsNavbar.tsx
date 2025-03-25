@@ -1,31 +1,34 @@
-import instagramIcon from '../../assets/icons/Instagram.png';
-import twitterIcon from '../../assets/icons/Twitter.png';
-import styled from 'styled-components';
+import instagramIcon from "../../assets/icons/Instagram.png";
+import twitterIcon from "../../assets/icons/Twitter.png";
+import styled from "styled-components";
 
 export const ContainerIcons = styled.section`
-    display: flex;
-    flex: row;
-    justify-items: center;
-    align-items: center;
-    gap: 0.5em;
+  display: flex;
+  flex: row;
+  justify-items: center;
+  align-items: center;
+  gap: 0.5em;
 
-    a {
-      width: 1.78rem;
-      height: 1.78rem;
+  a {
+    width: 1.78rem;
+    height: 1.78rem;
 
-      img {
-        width: 100%;
-        height: 100%;
-        margin: auto;
-      }
+    &:hover {
+      transform: scale(1.1);
     }
 
+    img {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+    }
+  }
 `;
 
 export const Icons = styled.img`
-    width: 1.78em;
-    height: 1.78em;
-    margin: auto;
+  width: 1.78em;
+  height: 1.78em;
+  margin: auto;
 `;
 
 function IconsNavbar() {
@@ -34,13 +37,15 @@ function IconsNavbar() {
       <a
         target="_blank"
         rel="noreferrer noopener"
-        href="https://instagram.com/olemidia">
+        href="https://instagram.com/olemidia"
+      >
         <Icons alt="instagram" src={instagramIcon} className="instagramIcon" />
       </a>
       <a
         target="_blank"
         rel="noreferrer noopener"
-        href="https://twitter.com/olemidia">
+        href="https://twitter.com/olemidia"
+      >
         <Icons alt="instagram" src={twitterIcon} className="instagramIcon" />
       </a>
     </ContainerIcons>

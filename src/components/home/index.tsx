@@ -23,7 +23,7 @@ function Home() {
         className="floating-whatsapp-button"
         href="https://api.whatsapp.com/send/?phone=+55%2062%2099972-1607&text=Gostaria%20de%20conversar%20sobre%20..."
       >
-        <img src={wpp_logo} alt="wpp icon" />
+        <img src={wpp_logo} alt="wpp icon" className="wpp-icon" />
       </a>
     </HomeContainer>
   );

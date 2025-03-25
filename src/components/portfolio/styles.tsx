@@ -32,6 +32,15 @@ export const PortfolioContainer = styled.section`
     line-height: 1.06667rem;
     text-transform: uppercase;
     margin-top: 2.5rem;
+    -webkit-box-shadow: 7px 9px 12px -1px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 7px 9px 12px -1px rgba(0, 0, 0, 0.51);
+    box-shadow: 7px 9px 12px -1px rgba(0, 0, 0, 0.51);
+  }
+
+  a:hover {
+    color: #ffffff;
+    opacity: 0.9;
+    background: var(--Dark-Brown, #250900);
   }
 
   @media (min-width: 600px) {

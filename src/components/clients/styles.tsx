@@ -8,7 +8,7 @@ export const ClientsContainer = styled.section`
   align-items: center;
   justify-items: center;
   background-color: var(--Dark-Brown, #ff6123);
-  padding: 2.2em 9%;
+  padding: 5rem 9%;
 
   h5 {
     color: var(--Vibrant-Orange, #250900);

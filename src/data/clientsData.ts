@@ -3,7 +3,7 @@ import image2 from "../assets/images/clients/LeoGugiel-Benfica.webp";
 import image3 from "../assets/images/clients/RoniMoura-Mirassol.webp";
 import image4 from "../assets/images/clients/Sandrinho-Goianesia.webp";
 import image5 from "../assets/images/clients/LuisEduardo-GoiasU17.webp";
-import image6 from "../assets/images/clients/Gabardo.png";
+import image6 from "../assets/images/clients/Gabardo-SãoJoséRS.webp";
 import image7 from "../assets/images/clients/Fernando-CAP.webp";
 import image8 from "../assets/images/clients/Moises-CSKA.webp";
 import image9 from "../assets/images/clients/LeandoLima-SK ProstějovTchéquia.webp";
