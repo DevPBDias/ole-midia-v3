@@ -15,11 +15,17 @@ function Who() {
         <div>
           <h1>Quem somos</h1>
           <p>
-            A <span>Olé Midia</span> surgiu da união de duas paixões entre
-            primos: esporte e design. Nossa missão é elevar ao máximo a imagem
-            de nossos atletas. Oferecemos serviços de assessoria, coordenação,
-            gestão e planejamento como parte integrante de nossa atuação
+            A <span>Olé Midia</span> atua com assessoria e marketing esportivo,
+            focada em elevar a imagem, a marca pessoal e a carreira de atletas.
+          </p>
+          <p>
+            Trabalhamos com gestão, planejamento e posicionamento estratégico,
+            respeitando a história, o momento e os objetivos de cada
             profissional.
+          </p>
+          <p>
+            Mais do que comunicação, construímos valor, direcionamento de
+            carreira e presença profissional dentro e fora de campo.
           </p>
         </div>
       </TxtContainer>
