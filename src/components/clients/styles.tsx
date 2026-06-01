@@ -94,6 +94,7 @@ export const ImgContainer = styled.picture`
   img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 0.89em;
   }
 `;

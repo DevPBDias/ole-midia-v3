@@ -1,5 +1,5 @@
 import { BtnContainer } from "./styles";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { allArts } from "../../data/portfolioData";
 
@@ -32,11 +32,7 @@ function BtnCarousel({
 
   return (
     <BtnContainer>
-      <motion.div
-        ref={carousel}
-        className="carousel"
-        whileTap={{ cursor: "grabbing" }}
-      >
+      <motion.div ref={carousel} className="carousel">
         <motion.div
           className="inner"
           drag="x"
@@ -53,14 +49,14 @@ function BtnCarousel({
             >
               Todos
             </button>
-            {filterBtns?.map((client: any, index: number) => (
+            {filterBtns?.map((client: { id: number; btnName: string }) => (
               <button
                 type="button"
-                key={index}
-                className={active === index + 1 ? "active" : ""}
-                onClick={() => filterItems(client)}
+                key={client.id}
+                className={active === client.id ? "active" : ""}
+                onClick={() => filterItems(client.btnName)}
               >
-                {client}
+                {client.btnName}
               </button>
             ))}
           </motion.div>

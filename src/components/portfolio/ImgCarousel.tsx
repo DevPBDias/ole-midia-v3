@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { ImgCarouselContainer } from "./styles";
 
@@ -7,13 +7,25 @@ function ImgCarousel({ data }: any) {
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
-    setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
-  }, []);
+    const handleResize = () => {
+      if (carousel.current) {
+        setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+      }
+    };
+
+    // Calculate initial width
+    handleResize();
+
+    // Recalculate on window resize
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [data]);
 
   return (
     <ImgCarouselContainer>
       <motion.div ref={carousel} className="carousel">
         <motion.div
+          key={data?.join(",")}
           className="inner"
           drag="x"
           dragConstraints={{ right: 0, left: -width }}

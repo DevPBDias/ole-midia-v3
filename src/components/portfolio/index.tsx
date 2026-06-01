@@ -8,7 +8,14 @@ function Portfolio() {
   const [items, setItems] = useState<string[]>(allArts.arts);
   const [active, setActive] = useState<number>(0);
 
-  const filterBtns = portfolioData.map((value) => value.btnName);
+  const portfolioOrdered = [...portfolioData].sort((a, b) =>
+    a.btnName.localeCompare(b.btnName),
+  );
+
+  const filterBtns = portfolioOrdered.map((value) => ({
+    id: value.id,
+    btnName: value.btnName,
+  }));
 
   const filterItems = (btnName: string) => {
     const data = portfolioData.filter((value) => value.btnName === btnName);

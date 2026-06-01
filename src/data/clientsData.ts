@@ -1,15 +1,9 @@
 import image1 from "../assets/images/clients/Giuliano-CAP.webp";
 import image2 from "../assets/images/clients/LeoGugiel-Benfica.webp";
-import image3 from "../assets/images/clients/RoniMoura-Mirassol.webp";
-import image4 from "../assets/images/clients/Sandrinho-Goianesia.webp";
-import image5 from "../assets/images/clients/LuisEduardo-GoiasU17.webp";
-import image6 from "../assets/images/clients/Gabardo-SãoJoséRS.webp";
-import image7 from "../assets/images/clients/Fernando-CAP.webp";
-import image8 from "../assets/images/clients/Moises-CSKA.webp";
-import image9 from "../assets/images/clients/LeandoLima-SK ProstějovTchéquia.webp";
-import image10 from "../assets/images/clients/LeoJaba-SãoBernardo.webp";
-import image11 from "../assets/images/clients/LucasCafé-Brasiliense.webp";
-import image12 from "../assets/images/clients/CAMV_Sports_Supervôlei.webp";
+import image3 from "../assets/images/clients/Roni_Moura.jpg";
+import image4 from "../assets/images/clients/Fernando.jpeg";
+import image5 from "../assets/images/clients/Gabriel_Knesowitsch.jpeg";
+import image6 from "../assets/images/clients/CAMV_Sports_Supervôlei.webp";
 
 export type IClientProps = {
   id: number;
@@ -22,7 +16,7 @@ const clientsData: IClientProps[] = [
   {
     id: 1,
     name: "Giuliano",
-    team: "Athletico-PR",
+    team: "Sem clube",
     image: image1,
   },
   {
@@ -33,63 +27,27 @@ const clientsData: IClientProps[] = [
   },
   {
     id: 3,
-    name: "Fernando",
-    team: "Athletico-PR",
-    image: image7,
-  },
-  {
-    id: 4,
-    name: "Moisés",
-    team: "CSKA (RUS)",
-    image: image8,
-  },
-  {
-    id: 5,
     name: "Roni Moura",
-    team: "Mirassol",
+    team: "AFS Vila das Aves (POR)",
     image: image3,
   },
   {
-    id: 6,
-    name: "Sandrinho",
-    team: "Goianésia",
+    id: 4,
+    name: "Fernando",
+    team: "Ceará",
     image: image4,
   },
   {
-    id: 7,
-    name: "Luis Eduardo",
-    team: "Goiás (U-17)",
+    id: 5,
+    name: "Gabriel Knesowitsch",
+    team: "Cuiabá",
     image: image5,
   },
   {
-    id: 8,
-    name: "Gabardo Jr.",
-    team: "São José - RS (Treinador)",
+    id: 6,
+    name: "CAMV Sports",
+    team: "Time de base de voleibol",
     image: image6,
-  },
-  {
-    id: 9,
-    name: "Leandro Lima",
-    team: "SK Prostějov (Rep. Theca)",
-    image: image9,
-  },
-  {
-    id: 10,
-    name: "Leo Jabá",
-    team: "São Bernardo",
-    image: image10,
-  },
-  {
-    id: 11,
-    name: "Lucas Café",
-    team: "Brasiliense",
-    image: image11,
-  },
-  {
-    id: 12,
-    name: "CAMV Sports Supervôlei",
-    team: "Escolinha de Vôlei",
-    image: image12,
   },
 ];
 

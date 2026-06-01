@@ -49,7 +49,7 @@ export const TxtContainer = styled.div`
   padding-block: 2.2em;
 
   div {
-    padding-inline: 10%;
+    padding-inline: 8%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -165,7 +165,7 @@ export const TxtContainer = styled.div`
   @media (min-width: 1500px) {
     div {
       p {
-        width: 24rem;
+        width: 26rem;
         text-align: left;
         font-size: 1rem;
         line-height: 1.77778rem;

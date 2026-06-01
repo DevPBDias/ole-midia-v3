@@ -15,17 +15,20 @@ function Who() {
         <div>
           <h1>Quem somos</h1>
           <p>
-            A <span>Olé Midia</span> atua com assessoria e marketing esportivo,
-            focada em elevar a imagem, a marca pessoal e a carreira de atletas.
+            A <span>Olé Midia</span> atua como assessoria e marketing esportivo,
+            tendo como missão elevar ao máximo a imagem, a marca pessoal e a
+            carreira de nossos atletas.
           </p>
           <p>
-            Trabalhamos com gestão, planejamento e posicionamento estratégico,
-            respeitando a história, o momento e os objetivos de cada
-            profissional.
+            Acreditamos que visibilidade sem estratégia não constrói legado. Por
+            isso, oferecemos gestão, planejamento e posicionamento
+            personalizados, respeitando a história, o momento e os objetivos de
+            cada atleta.
           </p>
+
           <p>
-            Mais do que comunicação, construímos valor, direcionamento de
-            carreira e presença profissional dentro e fora de campo.
+            Mais do que comunicação, entregamos direcionamento de carreira,
+            valor de marca e presença profissional dentro e fora de campo.
           </p>
         </div>
       </TxtContainer>
