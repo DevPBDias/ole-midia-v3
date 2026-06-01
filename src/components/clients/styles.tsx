@@ -46,8 +46,8 @@ export const ClientsContainer = styled.section`
 `;
 
 export const CardContainer = styled.div`
-  width: 98.29px;
-  height: 117.16px;
+  width: 150px;
+  height: 180px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -58,8 +58,8 @@ export const CardContainer = styled.div`
   object-fit: cover;
 
   @media (min-width: 700px) {
-    width: 192.71px;
-    height: 229.68px;
+    width: 200px;
+    height: 260px;
   }
 
   @media (min-width: 1400px) {
