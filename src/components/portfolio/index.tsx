@@ -37,7 +37,7 @@ function Portfolio() {
       <a
         target="_blank"
         rel="noreferrer noopener"
-        href="https://drive.google.com/file/d/1M_GIf7TGoNhDwePLdRU4huUZJJ0lCF1M/view?usp=share_link"
+        href="https://docs.google.com/presentation/d/1s6ve6CBnZzZUkdtc3KH-THXCONsCjomYmj6MCD4ifew/edit?slide=id.g1e7db01010e_0_0#slide=id.g1e7db01010e_0_0"
       >
         Confira nosso portfólio completo
       </a>

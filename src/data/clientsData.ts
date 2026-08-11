@@ -1,9 +1,10 @@
 import image1 from "../assets/images/clients/Giuliano-CAP.webp";
 import image2 from "../assets/images/clients/LeoGugiel-Benfica.webp";
 import image3 from "../assets/images/clients/Roni_Moura.jpg";
-import image4 from "../assets/images/clients/Fernando.jpeg";
-import image5 from "../assets/images/clients/Gabriel_Knesowitsch.jpeg";
-import image6 from "../assets/images/clients/CAMV_Sports_Supervôlei.webp";
+import image4 from "../assets/images/clients/Fernando.jpg";
+import image5 from "../assets/images/clients/Gabriel_Knesowitsch.jpg";
+import image6 from "../assets/images/clients/Miguel_Valadares.jpg";
+import image7 from "../assets/images/clients/CAMV_Sports_Supervôlei.webp";
 
 export type IClientProps = {
   id: number;
@@ -34,20 +35,26 @@ const clientsData: IClientProps[] = [
   {
     id: 4,
     name: "Fernando",
-    team: "Ceará",
+    team: "Chapecoense",
     image: image4,
   },
   {
     id: 5,
     name: "Gabriel Knesowitsch",
-    team: "Cuiabá",
+    team: "Mirassol",
     image: image5,
   },
   {
     id: 6,
+    name: "Miguel Valadares",
+    team: "Goiás U-10",
+    image: image6,
+  },
+  {
+    id: 7,
     name: "CAMV Sports",
     team: "Time de base de voleibol",
-    image: image6,
+    image: image7,
   },
 ];
 
